@@ -7,85 +7,41 @@ body {
   color: #5a5a5a;
 }
 
-/* carousel */
-.media-carousel 
-{
-  margin-bottom: 0;
-  padding: 0 40px 30px 40px;
-  margin-top: 30px;
-}
-/* Previous button  */
-.media-carousel .carousel-control.left 
-{
-  left: -12px;
-  background-image: none;
-  background: none repeat scroll 0 0 #222222;
-  border: 4px solid #FFFFFF;
-  border-radius: 23px 23px 23px 23px;
-  height: 40px;
-  width : 40px;
-  margin-top: 30px
-}
-/* Next button  */
-.media-carousel .carousel-control.right 
-{
-  right: -12px !important;
-  background-image: none;
-  background: none repeat scroll 0 0 #222222;
-  border: 4px solid #FFFFFF;
-  border-radius: 23px 23px 23px 23px;
-  height: 40px;
-  width : 40px;
-  margin-top: 30px
-}
-/* Changes the position of the indicators */
-.media-carousel .carousel-indicators 
-{
-  right: 50%;
-  top: auto;
-  bottom: 0px;
-  margin-right: -19px;
-}
-/* Changes the colour of the indicators */
-.media-carousel .carousel-indicators li 
-{
-  background: #c0c0c0;
-}
-.media-carousel .carousel-indicators .active 
-{
-  background: #333333;
-}
-.media-carousel img
-{
-  width: 250px;
-  height: 100px
-}
-/* End carousel */
-
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
+/* Code for the logo */
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+  position: relative;
   left: 0;
-  z-index: 20;
+  margin-left: -1000px;
 }
 
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
+.navbar-brand>img {
+  padding: 0px; /* firefox bug fix */
+  position: relative;
+  float: left !important;
 }
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
+
+.navbar .container-fluid, .navbar-brand {
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.navbar-wrapper .navbar .container {
-  width: auto;
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+   line-height: 70px;
+  }
+}
+
+.navbar-nav > li > a:hover{
+  background-color: white;
+  border-bottom: solid 2px #000000;
+  display: inline;
+  padding: 3px;
+}
+
+.navbar {
+  margin-bottom: 0;
 }
 
 

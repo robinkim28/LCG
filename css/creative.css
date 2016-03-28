@@ -65,7 +65,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 aside {
@@ -123,7 +123,7 @@ aside {
 }
 
 @media(min-width:768px) {
-    /*.navbar-default {
+    .navbar-default {
         border-color: rgba(255,255,255,.3);
         background-color: transparent;
     }
@@ -145,7 +145,7 @@ aside {
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
         color: #fff;
-    }*/
+    }
 
     .navbar-default.affix {
         border-color: rgba(34,34,34,.05);
@@ -199,6 +199,10 @@ header .header-content .header-content-inner h1 {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+.highlight{
+    color: #f05f40;
 }
 
 header .header-content .header-content-inner hr {
